@@ -5,8 +5,7 @@ To run the website you need:
     2. MySql workbench
 
 
-Open mysql workbench acoonect to your local server =>
-    go to file and select open script
+Open mysql workbench and connect to your local server =>
     navagate to the file in this repository labled "fooddbDUMP.sql" it will be under the folder database
     Download it or save it somewhere
     on workbench, go to server, than data import
