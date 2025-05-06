@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipes</title>
+  <link rel="stylesheet" href="/recipeList.css"> 
+</head>
+<body>
+  <header>
+    <h1>Recipe Collection</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/add-recipe">Add a Recipe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="recipe-list">
+      <h2>
+        Chicken Recipes
+        <img src="/images/chicken.png" alt="Chicken icon" style="width: 30px; height: 30px; vertical-align: middle; margin-left: 10px;">
+      </h2>
+      <ul>
+        <% chickenRecipes.forEach(function(recipe) { %>
+          <li>
+            <a href="/recipe/<%= recipe.id %>"><%= recipe.name %></a>
+          </li>
+        <% }); %>
+      </ul>
+  
+      <h2>
+        Beef Recipes
+        <img src="/images/beeef.png" alt="Beef icon" style="width: 30px; height: 30px; vertical-align: middle; margin-left: 10px;">
+      </h2>
+      <ul>
+        <% beefRecipes.forEach(function(recipe) { %>
+          <li>
+            <a href="/recipe/<%= recipe.id %>"><%= recipe.name %></a>
+          </li>
+        <% }); %>
+      </ul>
+  
+      <h2>
+        Tofu Recipes
+        <img src="/images/tofuu.png" alt="Tofu icon" style="width: 30px; height: 30px; vertical-align: middle; margin-left: 10px;">
+      </h2>
+      <ul>
+        <% tofuRecipes.forEach(function(recipe) { %>
+          <li>
+            <a href="/recipe/<%= recipe.id %>"><%= recipe.name %></a>
+          </li>
+        <% }); %>
+      </ul>
+    </section> 
+    <footer>
+      <p>&copy; 2025 My Recipe App | All Rights Reserved</p>
+    </footer>
+  </main>
+</body>
+</html>

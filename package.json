@@ -1,0 +1,26 @@
+{
+  "name": "hw2",
+  "version": "1.0.0",
+  "description": "o run the website you need:\r     1. Nodejs\r     2. MySql workbench",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neilpflores/hw2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neilpflores/hw2/issues"
+  },
+  "homepage": "https://github.com/neilpflores/hw2#readme",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.1"
+  }
+}

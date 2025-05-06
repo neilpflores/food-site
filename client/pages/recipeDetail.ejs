@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/recipeDetail.css"> 
+  <script defer src="/script.js"></script> <!-- JavaScript for hover functionality -->
+</head>
+<body>
+  <header>
+    <h1><%= recipe.name %></h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/recipes">Recipes</a></li>
+        <li><a href="/add-recipe">Add a Recipe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="recipe-detail">
+      <h2>Description</h2>
+      <p><%= recipe.description %></p>
+
+      <h3>Instructions</h3>
+      <p><%= recipe.instructions %></p>
+
+      <h3>Ingredients</h3>
+      <ul>
+        <% ingredients.forEach(function(ingredient) { %>
+            <li class="ingredient" 
+            data-name="<%= ingredient.name %>" 
+            data-origin="<%= ingredient.origin %>" 
+            data-safety="<%= ingredient.safety_tips %>">
+          <%= ingredient.name %>
+          <div class="hover-info">
+            <strong>Origin:</strong> <%= ingredient.origin %><br>
+            <strong>Safety Tip:</strong> <%= ingredient.safety_tips %>
+          </div>
+        </li>      
+        <% }); %>
+      </ul>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 My Recipe App | All Rights Reserved</p>
+    </footer>
+  </main>
+</body>
+</html>

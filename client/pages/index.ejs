@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Food Site</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/recipes">Recipes</a></li>
+        <li><a href="/add-recipe">Add a Recipe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="intro">
+      <h2>About My Favorite Recipes</h2>
+      <p>Welcome to my food site! Here, I share some of my favorite recipes, each one carefully chosen through an easy recipe search and developed through my love for cooking and experimenting with different flavors. Whether you're a fan of chicken, beef, tofu, or grains, you'll find something to try! 8></p>
+    </section>
+
+    <section id="featured-recipes">
+      <h2>Featured Recipes</h2>
+      <p>Check out some of my top recipes:</p>
+      <ul>
+        <% recipes.forEach(function(recipe) { %>
+          <li>
+            <a href="/recipe/<%= recipe.id %>"><%= recipe.name %></a> 
+            - <%= recipe.protein_type %>
+            <% 
+              let imageName;
+              if (recipe.protein_type === 'Chicken') imageName = 'chicken.png';
+              else if (recipe.protein_type === 'Beef') imageName = 'beeef.png';
+              else if (recipe.protein_type === 'Tofu') imageName = 'tofuu.png';
+            %>
+            <% if (imageName) { %>
+              <img src="/images/<%= imageName %>" alt="<%= recipe.protein_type %> icon" style="width: 30px; height: 30px; vertical-align: middle; margin-left: 10px;">
+            <% } %>
+          </li>
+        <% }); %>
+      </ul>
+      
+    </section>
+
+    <footer>
+      <p>&copy; 2025 My Recipe App | All Rights Reserved</p>
+    </footer>
+  </main>
+</body>
+</html>

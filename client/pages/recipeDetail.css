@@ -1,0 +1,141 @@
+#recipe-detail {
+    margin: 0 auto;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ff6347; /* Tomato color */
+  }
+  
+  main {
+    padding: 20px;
+    background-color: white;
+  }
+  
+  #intro {
+    margin-bottom: 30px;
+  }
+  
+  #intro h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  #featured-recipes {
+    margin-top: 30px;
+  }
+  
+  #featured-recipes h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  #featured-recipes ul {
+    list-style-type: none;
+  }
+  
+  #featured-recipes ul li {
+    margin-bottom: 10px;
+  }
+  
+  #featured-recipes ul li a {
+    color: #007bff;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  
+  #featured-recipes ul li a:hover {
+    color: #ff6347;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: 2em;
+    color: white;
+  }
+  
+  h3 {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #444;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .ingredient {
+    font-size: 1.2em;
+    padding: 8px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .ingredient:hover {
+    background-color: #f0f0f0;
+  }
+  
+.hover-info {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fefefe;
+  border: 1px solid #ccc;
+  padding: 8px;
+  width: 250px;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
