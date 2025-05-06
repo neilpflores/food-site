@@ -1,5 +1,7 @@
 To run the website you need:
+
     1. Nodejs
+
     2. MySql workbench
 
 
@@ -25,4 +27,5 @@ To run program use command node .\app.js in the the repository directory
 Then use your browser and navigate to "localhost:4500" Or if you change it in app.js whatever starts the server
 
 Notes: the other items in the database are just there to view easily what is in the database.
+
 Under Client theres a folder for images and pages, each page has a css file and there a js for the hovering over an ingrediant feature after selecting a recipe
