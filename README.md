@@ -6,9 +6,13 @@ To run the website you need:
 
 
 Open mysql workbench and connect to your local server =>
+
     navagate to the file in this repository labled "fooddbDUMP.sql" it will be under the folder database
+
     Download it or save it somewhere
+
     on workbench, go to server, than data import
+
     Import the dump file and name a new schema
 
 To run the website create a file called .env
